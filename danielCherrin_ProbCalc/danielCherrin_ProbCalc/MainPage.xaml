@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:danielCherrin_ProbCalc"
+             x:Class="danielCherrin_ProbCalc.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Text="02:" HorizontalOptions="EndAndExpand" Grid.Row="0" Grid.Column="0"/>
+        <Label Text="03:" HorizontalOptions="EndAndExpand" Grid.Row="1" Grid.Column="0"/>
+        <Label Text="04:" HorizontalOptions="EndAndExpand" Grid.Row="2" Grid.Column="0"/>
+        <Label Text="05:" HorizontalOptions="EndAndExpand" Grid.Row="3" Grid.Column="0"/>
+        <Label Text="06:" HorizontalOptions="EndAndExpand" Grid.Row="4" Grid.Column="0"/>
+        <Label Text="07:" HorizontalOptions="EndAndExpand" Grid.Row="5" Grid.Column="0"/>
+        <Label Text="08:" HorizontalOptions="EndAndExpand" Grid.Row="6" Grid.Column="0"/>
+        <Label Text="09:" HorizontalOptions="EndAndExpand" Grid.Row="7" Grid.Column="0"/>
+        <Label Text="10:" HorizontalOptions="EndAndExpand" Grid.Row="8" Grid.Column="0"/>
+        <Label Text="11:" HorizontalOptions="EndAndExpand" Grid.Row="9" Grid.Column="0"/>
+        <Label Text="12:" HorizontalOptions="EndAndExpand" Grid.Row="10" Grid.Column="0"/>
+
+        <Label x:Name="lbl_02Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="1"/>
+        <Label x:Name="lbl_03Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="1" Grid.Column="1"/>
+        <Label x:Name="lbl_04Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="2" Grid.Column="1"/>
+        <Label x:Name="lbl_05Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="3" Grid.Column="1"/>
+        <Label x:Name="lbl_06Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="4" Grid.Column="1"/>
+        <Label x:Name="lbl_07Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="5" Grid.Column="1"/>
+        <Label x:Name="lbl_08Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="6" Grid.Column="1"/>
+        <Label x:Name="lbl_09Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="7" Grid.Column="1"/>
+        <Label x:Name="lbl_10Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="8" Grid.Column="1"/>
+        <Label x:Name="lbl_11Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="9" Grid.Column="1"/>
+        <Label x:Name="lbl_12Prob" Text="-%" HorizontalOptions="StartAndExpand" Grid.Row="10" Grid.Column="1"/>
+
+        <ActivityIndicator x:Name="indic_calculating" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" Color="Black" HorizontalOptions="CenterAndExpand" IsRunning="False"/>
+
+        <Button Text="Go!" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" HorizontalOptions="CenterAndExpand" Clicked="Button_Clicked"/>
+
+    </Grid>
+
+</ContentPage>
